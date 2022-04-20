@@ -1,0 +1,136 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* header and page */ 
+
+header {
+    background-color: #0060df;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 20px ;
+}
+
+.title_header {
+    filter: drop-shadow(0 0 0.1em #0051ffab);
+    letter-spacing: 2px; 
+    flex-basis: 400px;
+}
+
+
+/* logo  */
+
+#logoLeft {
+    color: #ffffff;
+    font-size: 30px;
+    margin-right: 10pc;
+}
+
+/* menu style and options */
+
+#itens_menu_nav_header {
+    display: flex;
+}
+
+#itens_menu_nav_header li {
+    margin: 0 20px;
+}
+
+#itens_menu_nav_header a, #itens_menu_nav_header li, #btn_menu_header a {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s ;
+}
+
+#itens_menu_nav_header a:hover, 
+#itens_menu_nav_header li:hover,
+#btn_menu_header:hover, 
+#logoLeft:hover{
+    color: #012049;
+}
+
+.areaMenu, #itensItMenu {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #logoLeft {
+        color: #ffffff;
+        font-size: 30px;
+        margin-right: 2pc;
+    }
+}
+
+/* quebra and menu mobile */
+
+@media screen and (max-width: 550px) {
+    #itens_menu_nav_header {
+        display: none;
+    }
+
+    .areaMenu {
+        display: block;
+    }
+
+    #btn_menu_header {
+        color: white;
+        display: block;
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 20px;
+    }
+
+    /* menu mobile */
+
+    #itensItMenu {
+        display: none;
+        background-color: #012049;
+        padding: 10px;
+        line-height: 4em;
+    }
+
+    #itensItMenu li {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #itensItMenu a {
+        margin: 0 10px ;
+        padding: 0 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        transition: all .3s;
+    }
+
+    #itensItMenu a:hover {
+        background-color: #99999915;
+        border-radius: 20px;
+    }
+
+    #logoLeft {
+        margin: 0;
+    }
+
+    .title_header {
+        position: static;
+        
+    }
+}

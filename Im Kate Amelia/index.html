@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kate Project - Amelia</title>
+    <link rel="stylesheet" href="src/css/kateAmeliaPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logoHeader">
+            <a href="/"><img src="src/img/logo.png" alt="logo.png"></a>
+        </div>
+        <nav class="nav_menu">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PORTFOLIO</li>
+                <li>SERVICES</li>
+                <li>HIRE ME</li>
+            </ul>
+        </nav>
+        <div class="btnsHeader">
+            <span class="btnThema" onclick="themeDark()"><i class="fa-solid fa-moon"></i></span>
+            <button class="btnMenuMobile" onclick="showListMenu()" onblur="closeListMenu()"><i
+                class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <main>
+        <section class="conteinerMain">
+            <div class="conteinerTextLeft">
+                <article>
+                    <h1>I'm <span class="kateFirstName">Kate</span> Amelia</h1>
+                    <p>This is my official portifólio website to showcase my all works realated to web development and
+                        UI design</p>
+                    <a class="btnDowloadCV" href="/">Dowload CV</a>
+                </article>
+                <div>
+                    <ul class="list_itens_mediasosial">
+                        <li>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-behance"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-basketball"></i>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="conteinerImages">
+                <div class="imagesGirl">
+                    <img class="backgdOrange" src="src/img/pattern.png" alt="patternOrange.png">
+                    <img class="girlImageKate" src="src/img/girl.png" alt="girl.png">
+                </div>
+                <img class="imageMobileGirl" src="src/img/imageMobileKate.png" alt="imageMobile">
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="src/js/themePageKate.js"></script>
+<script src="src/js/menuMobile.js"></script>
+
+</html>

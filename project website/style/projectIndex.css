@@ -1,0 +1,362 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho da pagina */
+
+header {
+    background-color: #242424;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+#btnMenuItens {
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    padding: 4px;
+    transition: .6s;
+    transform: rotate(90deg);
+}
+
+
+/* - - conteiner menu - -*/
+
+#menu {
+    background-color: #242424;
+    border-radius: 0 0 10px 10px;
+    display: none;    
+    position: absolute;
+    left: 0;
+    width: 98%;
+    margin-left: 3px;
+    transition: .8s;
+    padding: 10px;
+}
+
+#menu ul li{
+    line-height: 4em;
+    list-style-type: none;
+}
+
+#menu a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .6s;
+}
+
+#menu a:hover {
+    background-color: #ffffff15;
+    letter-spacing: 2px;
+    padding-left: 20px;
+}
+
+.iconsMenu {
+    display: flex;
+    align-items: center;
+}
+
+/* button about Me menu*/
+
+#diceUser {
+    display: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 0 20px;
+}
+
+#diceUser:focus {
+    background-color: #00ffbf;
+}
+
+/* Conteiner dados */
+
+#localDiceUsers {
+    background-color: #e9e9e9d8;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px #00000041;
+    font-size: 20px;
+    line-height: 1.6em;
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    max-width: 400px;
+    padding: 30px;
+}
+
+/*  section bem vindo ao site + imagem */
+
+#webSiteConteiner {
+    background-image: linear-gradient(to left, #080679, #050358);
+}
+
+.welcomeWebSite {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;   
+    padding: 128px 15px 128px 15px; 
+}
+
+.welcomeWebSite h2 {
+    color: #fffffff1;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.welcomeWebSite p {
+    color: #ffffffee;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+/* destaque de texto */
+
+.destText {
+    background-color: #0300be81;
+    border-left: 2px solid #ffffff9c;
+    padding: 0 3px;
+}
+
+/* saiba mais button */
+
+.linkVerMais {
+    background-color: #00ffbf;
+    cursor: pointer;
+    display: block;
+    border: none;
+    max-width: 300px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 20px auto;
+    transition: all .7s;
+}
+
+.linkVerMais:hover {
+    box-shadow: 0px 0px 80px #000000fa;
+}
+
+/* --- sobre as linguages de programação --- */
+
+/* conteiner  + text*/
+#linguagensConteiner {
+    max-width: 1100px;
+    margin: 12vh auto;   
+    padding:  15px ;
+    display: none;
+}
+
+.aboutText {
+    color: #000000f1;
+
+}
+
+.aboutText h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.aboutText p {
+    max-width: 900px;
+    font-size: 20px;
+    margin: 10px 0 40px 0;
+}
+
+/* buttons languages  */
+
+#aboutLanguages {
+    display: block;
+}
+
+.itemLanuages {
+    background-color: #04a079;
+    display: block;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.itemLanuages:hover {
+    background-color: #008161;
+}
+
+.itemLanuages h2 {
+    color: white;
+}
+
+/* cabeçalho and buttons */
+
+.headerAbout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerAbout button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 5px 5px #f7f7f71c;
+    padding: 0 10px;
+    transition: all .3s;
+}
+
+.headerAbout button:hover {
+    background-color: #ffffffd0;
+}
+
+/* conteiner area do formulário  */
+
+#conteinerForm {
+    background-color: #00000017;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000050;
+    margin: 90px 0 50px 0;
+    padding: 8% 15px ;
+}
+
+#conteinerDice {
+    max-width: 1000px;
+    display: grid; 
+    grid-template-columns: 600px auto;
+    align-items: center;
+    margin: auto;
+}
+
+/* text left and form*/
+
+#aboutDiceForm {
+    max-width: 500px;
+    margin-right: 0 10px;
+}
+
+#aboutDiceForm h3 {
+    font-size: 2.3em;
+    margin-bottom: 30px;
+}
+
+.textDestitle {
+    color: #ecec03;
+    text-shadow: 0px 2px 2px #0000007c;
+}
+
+#aboutDiceForm p {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 60px;
+}
+
+/* Estilização do formulário  */
+
+.headerForm {
+    display: flex;
+    align-items: center; 
+    margin: 10px 0;
+}
+
+.headerForm img {
+    display: block;
+    margin: 0 1px;
+}
+
+
+form input{
+    font-size: 16px;
+    margin: 5px 0 10px 0;
+    padding: 2px;
+    transition: all .5s;
+}
+
+form input:focus {
+    margin-left: 10px;
+}
+
+#options {
+    display: block;
+    width: 200px;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin: 10px 0;
+}
+
+#options option {
+    background-color: #04a0795b;
+    padding: 10px ;
+}
+
+/* btn enviar dados */
+
+#btnSubmitDice {
+    background-color: #008161;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 3px 6px #000000e0;
+    padding: 3px 20px;
+    display: block;
+    width: 200px;
+    margin: 20px 70px;
+}
+
+#btnSubmitDice:focus {
+    transform: scale(0.9);
+}
+
+
+/* icones do footer  */
+
+footer {
+    background-color: #d4d1d1;
+}
+
+.iconsFooter {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.iconsFooter img {
+    display: block;
+    margin: 0 10px;
+    width: 30px;
+}
+
+
+/* RESPONSIVIDADE DA PAAGINA */
+
+@media screen and (max-width: 965px) {
+    .welcomeWebSite {
+        display: block; 
+    }
+
+    .welcomeWebSite img {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    #conteinerDice {
+        display: block;
+    }
+
+    .welcomeWebSite {
+        padding: 70px 15px 128px 15px; 
+    }
+}

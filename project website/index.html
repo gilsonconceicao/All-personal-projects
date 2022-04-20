@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="style/projectIndex.css">
+    <link rel="stylesheet" href="style/aboutLanguages.css">
+    <!-- scripts -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/aboutLanguages.js" defer></script>
+    <script src="js/dadosCadastrados.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Logo</h1>
+        </div>
+        <span id="dataAtual"></span>
+       
+        <div class="iconsMenu">
+            <button id="diceUser" title="ver dados cadastrados..."><img src="icons/do-utilizador.png" alt="imagemIcon"></button>  
+            <button id="btnMenuItens">|||</button>  
+        </div>   
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Me</a></li>
+        </ul>
+    </nav>
+    <div id="localDiceUsers">
+        <img src="icons/user.png" alt="user.png">
+        <p class="addTextDigitados"></p>
+    </div>
+    <!-- SOBRE A PAGINA - 'SEJA BEM VINDO'-->
+    <section id="webSiteConteiner">
+        <div class="welcomeWebSite">
+            <article>
+                <h2>Mundo da Web</h2>
+                <p>Bem vindo(a) ao mundo da web. Sabemos que a internet é uma rede de <span class="destText">conexões globais</span> que permite o compartilhamento espontâneo da dados entre dispositivos. Más já parou para pensar em como um site é feito, <span class="destText">linguagens de programação</span> entre outros aspectos? </p>
+                <button class="linkVerMais"> SAIBA MAIS SOBRE O MUNDO DA WEB</button>
+               
+               
+            </article>
+            <img src="img/webDesign.png" alt="webDesign.png">
+           
+        </div>
+    </section>
+
+    <!-- SOBRE O DESENVOLVIMENTO WEB-->
+    <section id="linguagensConteiner">
+        <article class="aboutText">
+            <h3>Linguagens de programação</h3>
+            <p>Abordado ao tema acima, um site, por exemplo, é composto por três tópicos da web. HTML, CSS, JAVASTRIPT. E ai, curioso(a)? Veja abaixo.
+            </p>
+        </article>
+        <div id="aboutLanguages">
+            <div class="itemLanuages">
+                <div class="headerAbout">
+                    <h2>HTML</h2>
+                    <button id="btnShowHtml" title="ver mais sobre HTML">+</button>
+                </div>
+            </div>
+
+            <!-- sobre html -->
+
+            <div id="aboutHtml">
+                <img src="img/abautHtml.png" alt="abautHtml">
+                <p>HTML abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
+            </div>
+            
+            <div class="itemLanuages">
+                <div class="headerAbout">
+                    <h2>CSS</h2>
+                    <button id="btnShowCSS" title="ver mais sobre CSS">+</button>
+                </div>
+            </div>
+
+            <!-- sobre CSS -->
+        
+            <div id="aboutCSS">
+                <img src="img/aboutCSS.png" alt="abautCSS">
+                <p>HTML abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
+            </div>
+
+            <div class="itemLanuages">
+                <div class="headerAbout">
+                    <h2>JAVASTRIPT</h2>
+                    <button id="btnShowJavascript" title="ver mais sobre JS">+</button>
+                </div>
+            </div>
+            <!-- JAVASCRIPT -->
+        
+            <div id="aboutJavascript">
+                <img src="img/aboutJavascript.png" alt="abautJavascript">
+                <p>
+                JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+            </div>
+        </div>
+        <section id="conteinerForm">
+            <div id="conteinerDice">
+                
+                <article id="aboutDiceForm">
+                    <h3>Manipulação com <span class="textDestitle">JS</span></h3>
+                    <p>Ao lado, preencha seus dados e veja no menu seus dados digitados no icone do menu no menu. Um pequeno exercício de variáveis, DOM, Object e condições em JS para executar esse processo. </p>
+                
+                </article>
+                <div id="formDice">
+                    <div class="headerForm">
+                        <img src="icons/do-utilizador.png" alt="utilizador">
+                        <h3>PREENCHA SEUS DADOS</h3>
+                    </div>
+                    <form >
+                        <label for="name">Nome de usuário: </label> <br>
+                        <input type="text" size="23" name="name" id="nameUser">
+                        <br>
+                        <label for="name"> Email: </label> <br>
+                        <input type="email" size="23" name="email" id="emailUser">
+                        <br>
+                        <label for="languages">Qual a linguagem que você estuda?</label>
+                        <br>
+                        <select name="options" id="options">
+                            <option value="escolha" selected>Escolha...</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">JAVA</option>
+                            <option value="python">Python</option>
+                            <option value="c">C</option>
+                            <option value="c#">C#</option>
+                        </select>
+                        <button id="btnSubmitDice">ENVIAR DADOS</button>
+                    </form>
+                </div>
+                
+            </div>
+         </section>
+    </section>
+
+    <footer>
+
+        <div class="iconsFooter">
+            <a href="https://github.com/juniorsantos02" target="_blank"><img src="icons/github.svg" alt="github.svg"></a>
+            <a href="https://www.instagram.com/juniior_santos_02/" target="_blank"><img src="icons/instagram.svg" alt="instagram.svg"></a>
+
+        </div>
+    </footer>   
+</body>
+
+</html>

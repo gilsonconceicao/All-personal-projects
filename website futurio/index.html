@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future </title>
+    <link rel="stylesheet" href="style/teste.css">
+</head>
+<body>
+    <header>
+        <h1><span class="emphasisTitle">FU</span>TURIO</h1>
+        <nav class="listIens" id="menu"> <!---#menu - mobile-->
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOPE</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">BLOG</a></li>
+        </nav>
+        <div id="icons">
+            <ul class="listIens">
+                <li><button id="dadosUserLogin"><img src="icons/do-utilizador.png" alt="user imagem"></button></li>
+                <button id="preenchaDados"><a href="index.html#form">Preencha seus dados</a></button>
+                
+
+                <button id="btn_menumobile">&#9776;</button>
+            </ul>
+        </div>
+    </header>
+    <section id="localDados" >
+        <div id="conteinerDados">
+            <p id="dadosInfo"></p>
+            <img src="icons/user.png" alt="User">
+        </div>
+    </section>
+    <section class="emphasis">
+        <article>
+            <p class="subTitle">WELCOME TO THE FUTURE</p>
+            <h1>WELCOME TO FUTURIO|</h1>
+            <p class="text_sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias distinctio tenetur ullam aperiam quis dolorum! Officia ratione est.</p>
+
+            <div id="btns_acesso">
+                <a class="btnEmphasis" href="#">LEARN MORE</a>
+                <a class="btnEmphasis" id="about_butt" href="#">ABOUT FUTURIO</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="aboutFuturio">
+        <div id="conteinerForm">
+            <div id="form">
+                <h3>Digite os seus dados</h3>
+                <!---Nome user--->
+                <input type="text" id="nameUser" placeholder="digite o seu nome..."> <br>
+                <!---Email--->
+                <input type="email" id="nameEmail" placeholder="digite o seu e-mail..." name="email"> <br>
+                <!---Telefone--->
+                <input type="tel" maxlength="12" id="contactUser" placeholder="digite o seu telefone..."> <br>
+                <!--- masculino e feminino --->
+                <input type="radio" id="generoM" name="generOptions">
+                <label for="masc">masculino</label> <br>
+                <input type="radio" id="generoF" name="generOptions">
+                <label for="fem">feminino</label>
+                <!---button --->
+                 <button id="btnEnviarDados">ENVIAR DADOS</button>
+            </div>
+        </div>
+        <div class="about_references">
+            <img src="icons/estatisticas.png" alt="etatiticas">
+            <h3>Good Investments</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem laborum ut autem dicta fugiat tempora quia quam saepe, neque.</p>
+        </div>
+        <div class="about_references">
+            <img src="icons/comentario-alt.png" alt="comentarios">
+            <h3>Real Time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, laudantium asperiores eaque aliquid deserunt reiciendis, nam veritatis distinctio velit qui assumenda repellat quis.</p>
+        </div>
+    </section>
+</body>
+<script src="js/menuMobile.js"></script>
+<script src="js/dadosCadastrais.js"></script>
+<script src="js/menuMobilee.js"></script>
+</html>

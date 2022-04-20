@@ -1,0 +1,101 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* textarea coments */
+
+#message_textArea_click {
+    display: none;
+    color: white;
+    background-color: #002c66e7;
+    box-shadow: 0px 0px 20px #00000063;
+    position: absolute;
+    top: 56px;
+    right: 20px;
+    border-radius: 6px ;
+    width: 300px;
+    padding: 10px;
+    z-index: 20;
+}
+
+#message_textArea_click p {
+    line-height: 2em;
+}
+
+#message_textArea_click button {
+    background-color: white;
+    border-radius: 4px;
+    padding: 1px 10px;
+}
+
+#commentAnswer {
+    
+    line-height: 1.3em ;
+}
+
+textarea {
+    font-size: 17px;
+    padding: 3px;
+}
+
+
+/* ---- message dev ------  */
+
+#message_dev_code {
+    display: none;
+    color: white;
+    background-color: #001530;
+    box-shadow: 0px 0px 20px #00000063;
+    position: absolute;
+    z-index: 20;
+    top: 56px;
+    right: 20px;
+    border-radius: 6px ;
+    max-width: 700px;
+    padding: 10px;
+}
+
+#message_dev_code h3 {
+    font-size: 2em;
+}
+
+#message_dev_code p {
+    font-size: 20px;
+    line-height: 1.6em;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.guideStudyLanguages {
+    display: flex; 
+    flex-direction: column;
+    padding: 10px 0 ;
+}
+
+.guideStudyLanguages li {
+    color: #00f8baf8;
+    filter: drop-shadow(0 0 0.3em rgba(3, 165, 214, 0.801));
+    border-bottom: 1px solid #ffffff57;
+    cursor: pointer;
+    display: block;
+    font-size: 50px;
+    margin: 0 10px;
+    transition: all .5s;
+}
+
+
+.guideStudyLanguages li:hover{
+    
+    padding: 0 40px;
+}
+
+.destText {
+    color: #e4e4e4c5;
+}

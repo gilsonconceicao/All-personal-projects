@@ -1,0 +1,216 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.darkTheme {
+    background-color: #161616;
+    color: white;
+}
+
+
+/* header page */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
+    padding: 0 70px;
+    height: 20vh;
+}
+
+.nav_menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_menu li {
+    color: white;
+    padding: 0 20px;
+}
+
+.nav_menu a {
+    text-shadow: 0 3px 5px #02020285;
+    color: #FF4321;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.btnThema {
+    cursor: pointer;
+    color: #131313ad;
+    font-size: 30px;
+    transition: all .7s;
+}
+
+.btnThema:hover {
+    color: black;
+}
+
+.btnMenuMobile {
+    display: none;
+}
+
+.btnsHeader {
+    display: flex;
+
+}
+
+/* article text left */
+
+.conteinerMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.conteinerTextLeft {
+    max-width: 700px;
+    margin: 0 20px;
+}
+
+.conteinerTextLeft h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.kateFirstName {
+    font-weight: bold;
+    color: #FF4321;
+}
+
+.conteinerTextLeft p {
+    font-size: 20px;
+    margin: 20px 0 37px 0;
+}
+
+.btnDowloadCV {
+    background-color: #FF4321;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*  conteiner Imagens  */
+
+.imageMobileGirl {
+    display: none;
+}
+
+.backgdOrange {
+    display: block;
+    margin: auto;
+    width: 470px;
+}
+
+.girlImageKate {
+    width: 400px;
+    position: absolute;
+    top: 109px;
+    right: 130px;
+    left: 60%;
+}
+
+/* ------ footer ------ */
+
+
+.list_itens_mediasosial {
+    display: flex;
+    position: relative;
+    top: 30px;
+    list-style-type: none;
+}
+
+.list_itens_mediasosial li {
+    font-size: 25px;
+    padding: 20px 5px;
+    
+}
+
+.list_itens_mediasosial a {
+    color: #131313ee;
+    transition: all .8s;
+}
+
+.list_itens_mediasosial a {
+    transform: translateX(-1em);
+}
+
+
+@media screen and (max-width: 1090px) {
+    .conteinerMain {
+        display: block;
+    }
+
+    .imagesGirl {
+        display: none;
+    }
+
+    .imageMobileGirl {
+        display: block;
+        margin: auto;
+    }
+}
+
+/* image + menu mobile */
+
+@media screen and (max-width: 840px) {
+    .imageMobileGirl {
+        width: 90%;
+    }
+
+    /* menu mobile */
+
+    header {
+        padding: 10px;
+    }
+
+    .btnMenuMobile {
+        cursor: pointer;
+        display: block;
+        background: none;
+        border: none;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    .nav_menu ul {
+        background-color: #161616;
+        position: absolute;
+        top: 20vh;
+        display: block;
+        right: 0;
+        width: 100%;
+        height: 80vh;
+        z-index: 10;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav_menu li {
+        padding: 30px;
+    }
+
+    .nav_menu a {
+        color: white;
+    }
+
+    .nav_menu a:hover {
+        color: #FF4321;
+    }
+} 

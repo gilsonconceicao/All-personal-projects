@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form JS</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <main>
+        <div id="layoutPageForm">
+            <section>
+                <h3>Conheça maneiras diferentes de manipular com JS</h3>
+                <p>Sabemos que existe variás formas de manipular input com JS, veja essa forma ao lado , preencha ao lado. Com this, arrow function e bind. </p>
+                <button onfocus="contar()">contar</button>
+                <p id="resTime"></p>
+                <br>
+                <p id="answer"></p>
+            </section>
+            <section id="conteinerForm">
+                <h2>DIGITE SEUS DADOS </h2>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="name" id="nameUser"> <br>
+                    <label for="nome">Sobrenome</label>
+                    <input type="text" id="sobrenomelUser"> <br>
+                    <label for="nome">Email</label>
+                    <input type="email" name="email" id="emailUser"> <br>
+                    <label for="nome">Telefone</label>
+                    <input type="tel" maxlength="11" placeholder="com DDD ex: 11, 71, 75..." id="telUser" > <br> 
+                    <button id="btnCheck">VERIFICAR</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="js/checkData.js"></script>
+<script src="js/time.js"></script>
+</html>

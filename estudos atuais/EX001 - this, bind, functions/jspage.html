@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos atuais</title>
+    <link rel="stylesheet" href="src/style/headerStyle.css">
+    <link rel="stylesheet" href="src/style/functionsHeader.css">
+    <link rel="stylesheet" href="src/style/mainConteiner.css">
+    <link rel="stylesheet" href="src/style/buttonsAndStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" title="Study guide"><i id="logoLeft" class="fa-solid fa-book-bookmark"></i></a>
+        </nav>
+        <nav class="title_header">
+            <h1>Estudos de Javascript</h1>
+        </nav>
+        <nav class="languages_icons">
+            <ul id="itens_menu_nav_header">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+
+                <li id="add_name_header" onclick="showAddName()"><i class="fa-solid fa-address-book"></i></li>
+
+                <li onclick="showAndCloseAbout()" id="btnLaptopCode"><i  class="fa-solid fa-laptop-code"></i></li>
+            </ul>
+        </nav>
+        <nav class="areaMenu">
+            <button onfocus="showMenu()" onblur="closeMenu()" id="btn_menu_header"><i class="fa-solid fa-bars-staggered"></i></button>
+        </nav>
+    </header>
+    <aside id="itensItMenu">
+        <ul >
+            <li> <i class="fa-solid fa-house"></i> <a href="#">HOME</a></li>
+            <li> <i class="fa-brands fa-html5"></i> <a href="#">JAVASCRIPT</a></li>
+            <li><i class="fa-brands fa-js-square"></i> <a href="#">HTML</a></li>
+            <li><i class="fa-brands fa-css3-alt"></i><a href="#">CSS</a></li>
+        </ul>
+    </aside>
+    <!-- menu click messages-->
+    <section>
+        <div id="message_textArea_click">
+            <p class="commentAnswer">Digite o seu nome &#8250; </p>
+            <input type="text" name="name" id="nameUser" >            
+            <button id="toSend" onclick="closeInput()" onfocus="showInput()">Salvar</button>
+        </div> 
+        <div id="message_dev_code">
+            <p>Pilares do Front-end: </p>
+            <div class="layoutAbout">
+                <ul class="guideStudyLanguages">
+                    <li>
+                        <i class="fa-brands fa-html5"></i>
+                    </li>
+                    <p>HTML abreviação para a expressão inglesa <span class="destText">HyperText Markup Language</span>.</p>
+                    <li>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </li>
+                    <p><span class="destText">Cascading Style Sheets</span> é um mecanismo para adicionar estilo a um documento web.</p>
+                    <li>
+                        <i class="fa-brands fa-js-square"></i>
+                    </li>
+                    <p>JavaScript é uma linguagem de programação interpretada estruturada, de <span class="destText">script em alto nível com tipagem dinâmica fraca e multiparadigma</span>.</p>
+                </ul>
+            </div>
+        </div>  
+    </section>
+    <!-- conteiner - main -->
+    <main class="conteiner">
+        <aside class="left_sidbar">
+           <ul class="links_sidebar">
+                <h3>Navegue pelo nosso guia de estudos</h3>
+                <li> <i class="fa-brands fa-html5"></i> <a href="#">JavaScript</a></li>
+                <li><i class="fa-brands fa-js-square"></i> <a href="#">html</a></li>
+                <li><i class="fa-brands fa-css3-alt"></i><a href="#">css</a></li>
+
+                <h3>Dicas para praticar</h3>
+                <li><i class="fa-solid fa-file"></i><a href="#">Dicas </a></li>
+
+                <h3>Lugares para seus projetos e suas carreiras </h3>
+                <li> <i class="fa-brands fa-github"></i></i> <a href="#">GitHub</a></li>
+                <li><i class="fa-brands fa-linkedin"></i> <a href="#">LinkdIn</a></li>
+                <li><i class="fa-brands fa-discord"></i><a href="#">Discord</a></li>
+            </ul>
+        </aside>
+        
+        <div class="main_conteiner_center">
+            
+        </div>
+        <aside class="right_sidbar">
+            <h3>Material para desenvolver</h3>
+            <p>Alguns sites existem para ajudar o desenvolvimento web tanto em projetos atuais como em profissionais.</p>
+
+            <h3>Conheça mais sobre eles</h3>
+            <ul class="links_sidebar">
+                <p>Documentações oficiais</p>
+                <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">Developer Mozilla</a></li>
+
+                <p>Banco de imagens gratuita</p>
+                <li><a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a></li>
+                <li><a href="https://br.freepik.com/" target="_blank">Freepik</a></li>
+                <li><a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+
+                <p>Banco de icones </p>
+                <li><a href="#">Flaticon</a></li>
+                <li><a href="#">Font Awesome</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+   
+<script src="src/js/menu.js"></script>
+<script src="src/js/functionsHeader.js"></script>
+<script src="src/js/mainConteiner.js"></script>
+</html>
